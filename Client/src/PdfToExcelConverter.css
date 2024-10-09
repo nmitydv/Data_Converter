@@ -1,0 +1,147 @@
+/* Container styles for the component */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4; /* Optional background color */
+}
+
+.converter-container {
+    width: 100%;
+    max-width: 600px; /* Ensures it doesn't exceed a comfortable width on larger screens */
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #1f0420;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Title styling */
+.title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Upload section styling */
+.upload-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.file-input {
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Button styling */
+.upload-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.upload-button:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+}
+
+.upload-button:hover:not(:disabled) {
+    background-color: #45a049;
+}
+
+/* PDF Preview section */
+.pdf-preview-section {
+    margin-top: 20px;
+    text-align: left;
+    color: #fff;
+}
+
+.pdf-preview {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #292929;
+    border-radius: 5px;
+}
+
+/* Converted files section */
+.converted-files-section {
+    margin-top: 30px;
+    text-align: left;
+    color: #fff;
+}
+
+.converted-files-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.download-link {
+    color: #2196F3;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.download-link:hover {
+    text-decoration: underline;
+}
+
+/* Error and Success messages */
+.error-message {
+    color: #FF5733; /* Red for error */
+    font-weight: bold;
+}
+
+.success-message {
+    color: #4CAF50; /* Green for success */
+    font-weight: bold;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 600px) {
+    .converter-container {
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .upload-button {
+        width: 100%; /* Full-width button on small screens */
+    }
+}
+.remove-button {
+    background-color: #757575; /* Red background for remove button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.remove-button:hover {
+    background-color: #2e2d2d; /* Darker red on hover */
+}
+.selected-file-item {
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: space-between; /* Space between name and button */
+    align-items: center; /* Center align items vertically */
+    margin-bottom: 10px; /* Spacing between items */
+}
+
