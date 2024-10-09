@@ -112,7 +112,7 @@ const PdfToExcelConverter = () => {
       </div>
 
       {/* Help Icon */}
-      <div className="help-icon" style={{ position: 'absolute', right: '20px', bottom: '70px' }}>
+      <div className="help-icon" style={{ position: 'absolute', right: '20px', bottom: '20px' }}>
         <a href="https://devnamit.com/" target="_blank" rel="noopener noreferrer">
           <FaQuestionCircle size={24} style={{ cursor: 'pointer', color: '#000' }} />
         </a>
